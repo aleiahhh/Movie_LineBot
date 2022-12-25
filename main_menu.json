@@ -66,6 +66,15 @@
             "text": "upcoming"
           },
           "height": "sm"
+        },
+        {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "FSM",
+              "text": "fsm"
+            },
+            "height": "sm"
         }
       ],
       "flex": 0

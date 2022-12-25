@@ -1,0 +1,16 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://i.imgur.com/VX9O3D5.png",
+          "size": "full",
+          "margin": "none",
+          "aspectRatio": "16:9"
+        }
+      ]
+    }
+  }

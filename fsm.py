@@ -1,7 +1,6 @@
 from transitions.extensions import GraphMachine
 
 from utils import send_flex_message, send_text_message
-import flex_message
 import api
 import json
 
@@ -35,6 +34,10 @@ class TocMachine(GraphMachine):
         text = event.message.text
         cur_movie[event.source.user_id] = text
         return True
+    
+    def is_going_to_fsm(self, event):
+        text = event.message.text
+        return text.lower() == "fsm"
 
     def on_enter_menu(self, event):
         Message = json.load(open('main_menu.json', 'r', encoding='utf-8'))
@@ -138,6 +141,11 @@ class TocMachine(GraphMachine):
             temp['contents'][i]['footer']['contents'][4]['action']['text'] = str(data[i][0])
         
         send_flex_message(reply_token, "upcoming", temp)
+
+    def on_enter_fsm(self, event):
+        reply_token = event.reply_token
+        temp = json.load(open('fsm.json', 'r', encoding='utf-8'))
+        send_flex_message(reply_token, "fsm", temp)
 
 
 
