@@ -1,15 +1,26 @@
-# TOC Project 2020
+# Movie-Searching Line Bot
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/dc7fa47fcd809b99d087/maintainability)](https://codeclimate.com/github/NCKU-CCS/TOC-Project-2020/maintainability)
+## Introdution
+a line bot that can search for
+* now playing movie
+* popular movie
+* top rated movie
+* upcoming movie
+in real time. Support multiple user at the same time.
 
-[![Known Vulnerabilities](https://snyk.io/test/github/NCKU-CCS/TOC-Project-2020/badge.svg)](https://snyk.io/test/github/NCKU-CCS/TOC-Project-2020)
+## Usage
+![image](https://i.imgur.com/hXlxrWI.jpeg)  
+after adding friend, it will send a welcome message
 
+![image](https://i.imgur.com/Cdsxuo7.jpeg)  
+enter "menu", the menu will show
 
-Template Code for TOC Project 2020
+![image](https://i.imgur.com/flA7tT4.jpeg)  
+Choose the imformation you want to know, the movies will show on screen  
+you can press the overview button to know more about the movie
 
-A Line bot based on a finite state machine
-
-More details in the [Slides](https://hackmd.io/@TTW/ToC-2019-Project#) and [FAQ](https://hackmd.io/s/B1Xw7E8kN)
+![image](https://i.imgur.com/yGWMTKq_d.webp?maxwidth=760&fidelity=grand)  
+press the fsm button, it'll show the fsm picture of this line bot
 
 ## Setup
 
@@ -71,19 +82,7 @@ Or You can use [servo](http://serveo.net/) to expose local servers to the intern
 
 
 ## Finite State Machine
-![fsm](./img/show-fsm.png)
-
-## Usage
-The initial state is set to `user`.
-
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
-
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
-
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+![image](https://i.imgur.com/Hf968NP.png)
 
 ## Deploy
 Setting to deploy webhooks on Heroku.
