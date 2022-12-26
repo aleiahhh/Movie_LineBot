@@ -1,4 +1,5 @@
 # Movie-Searching Line Bot
+the movie data's api is from [TMBD](https://www.themoviedb.org/)
 
 ## Introdution
 a line bot that can search for
