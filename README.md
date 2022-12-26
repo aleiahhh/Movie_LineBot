@@ -5,8 +5,10 @@ a line bot that can search for
 * now playing movie
 * popular movie
 * top rated movie
-* upcoming movie
-in real time. Support multiple user at the same time.
+* upcoming movie 
+  
+in real time.  
+Support multiple user at the same time.
 
 ## Usage
 ![image](https://i.imgur.com/hXlxrWI.jpeg)  
